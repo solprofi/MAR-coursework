@@ -51,8 +51,8 @@ submitButton.addEventListener('click', e => {
     let x = parseFloat(inputX.value);
     let y = parseFloat(inputY.value);
 
-    if (!isNaN(x) && !isNaN(y) && x < width && y < height) {
-      vertices.push([x, Math.abs(height - y)]);
+    if (!isNaN(x) && !isNaN(y) && x < WIDTH && y < HEIGHT) {
+      vertices.push([x, Math.abs(HEIGHT - y)]);
       redraw();
     }
 
